@@ -5,15 +5,17 @@
 :root {
     --light: #f8f9fa;
     --secondary: #adb5bd;
-    --dark: #343a40;
+    --dark: #0000009d;
     --primary-color: #f15bb5;
     --secondary-color: #2ec4b6;
     --border: #e9ecef;
+    --dark-color: rgb(0, 0, 0);
 }
 
 body {
     padding: 0;
     margin: 0;
+    background-color: var(--dark);
 }
 
 a {
@@ -36,7 +38,7 @@ a {
 }
 
 .text-dark {
-    color: var(--dark);
+    color: var(--dark-color);
 }
 
 .text-primary {
@@ -45,6 +47,10 @@ a {
 
 .bg-light {
     background-color: var(--light);
+}
+
+.bg-dark {
+    background-color: var(--dark);
 }
 
 .container {
@@ -121,7 +127,7 @@ a {
 .nav-link {
     font-size: 18px;
     margin: 12px;
-    color: var(--dark);
+    color: var(--light);
     font-family: 'Poppins', sans-serif;
 }
 
