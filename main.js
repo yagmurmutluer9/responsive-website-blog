@@ -11,8 +11,10 @@ toggle.addEventListener("click", (event) => {
 
 
 // with masonry
+setTimeout(function() {
 
-new Masonry('#posts .grid', {
-    itemSelector: '.grid-item',
-    gutter: 20
-});
+    new Masonry('#posts .grid', {
+        itemSelector: '.grid-item',
+        gutter: 20
+    });
+}, 1000);
