@@ -99,6 +99,74 @@ a {
     background-color: var(--secondary-color);
 }
 
+.object-fit {
+    max-height: 120px;
+    height: 80px;
+    width: 80px;
+    object-fit: fill;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.mt-2 {
+    margin-top: 10px;
+}
+
+.mt-3 {
+    margin-top: 50px;
+}
+
+.mb-3 {
+    margin-bottom: 30px;
+}
+
+.px-1 {
+    padding: 0 5px;
+}
+
+.px-2 {
+    padding: 0 20px;
+}
+
+.py-1 {
+    padding: 10px 0;
+}
+
+.py-2 {
+    padding: 20px 0;
+}
+
+.py-3 {
+    padding: 30px 0;
+}
+
+.thumbnail {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.rounded {
+    height: 120px;
+    width: 120px;
+    object-fit: fill;
+    border-radius: 99px;
+}
+
 
 /*section styling*/
 
@@ -183,11 +251,95 @@ a {
 /* ----------- Main Menu --------- */
 
 
+/* ----------- Footer  --------- */
+
+#footer {
+    padding-top: 4em;
+}
+
+#footer .feauture-post.flex-item {
+    margin-bottom: 10px;
+}
+
+#footer .tags a {
+    border-radius: 40px;
+    padding: 10px 20px;
+    font-size: 15px;
+}
+
+#footer .copyrights {
+    padding: 10px 0;
+    border-top: 2px solid var(--dark);
+}
+
+
+/* ----------- Footer  --------- */
+
+
+/* ----------- Article  --------- */
+
+#post {
+    padding: 0 2em;
+    margin-bottom: 4em;
+}
+
+.post-footer .post-author {
+    position: relative;
+    margin-top: 4em;
+    background-color: var(--dark-color);
+}
+
+.post-footer .post-author::after {
+    background-color: var(--primary-color);
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4em;
+    z-index: 0;
+}
+
+.post-footer .post-author .author-avatar {
+    margin: 0 auto;
+    margin-bottom: 1em;
+    position: inherit;
+    z-index: 1;
+}
+
+
+/* ----------- Article  --------- */
+
+
 /* Media Query*/
+
+.row {
+    display: flex;
+}
+
+.col-3 {
+    flex: 0 0 33.3333%;
+    max-width: 33.3333%;
+    padding-right: 35px;
+}
+
+@media (max-width: 1024px) {
+    .row {
+        flex-wrap: wrap;
+    }
+    .col-3 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
 
 @media (max-width: 768px) {
     .grid .grid-item {
         width: calc(50.0% - 20px);
+    }
+    .col-3 {
+        flex: 0 0 100%;
+        max-width: 100%;
     }
 }
 
